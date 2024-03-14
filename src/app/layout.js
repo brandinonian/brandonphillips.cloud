@@ -12,9 +12,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="bg-slate-800 p-12">
-          <a href='/school'>Home</a>
-        </div>
         {children}
       </body>
     </html>
