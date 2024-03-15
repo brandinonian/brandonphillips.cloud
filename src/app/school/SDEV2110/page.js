@@ -58,7 +58,7 @@ export default function SDEV2110Home() {
       <div>
         <div className="text-xl text-grey-100">Live Projects</div>
         {projects.map((project) => (
-          <div>
+          <div key={project.name}>
             <a href={project.link}>{project.name}</a>
           </div>
         ))}
