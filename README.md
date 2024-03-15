@@ -1,5 +1,3 @@
-[![Board Status](https://dev.azure.com/8404007666/25e5ac65-6736-4e4c-9603-c0f1d05e510d/6a95e9e4-ff79-4938-b391-b23a70ac9ce2/_apis/work/boardbadge/1c9d67b5-3b21-4811-8f75-9b35959066f0)](https://dev.azure.com/8404007666/25e5ac65-6736-4e4c-9603-c0f1d05e510d/_boards/board/t/6a95e9e4-ff79-4938-b391-b23a70ac9ce2/Microsoft.RequirementCategory/)
-
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
