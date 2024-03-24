@@ -1,6 +1,6 @@
 export default function CourseInfo({ id, title, description, narrative }) {
   return (
-    <div className="flex min-h-screen p-8">
+    <div className="flex p-8">
       <div>
         <div className="flex flex-row gap-6 justify-center p-8 mb-12 rounded-lg">
           <div className="text-6xl text-grey-100">{id}</div>
