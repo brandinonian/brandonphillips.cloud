@@ -33,7 +33,7 @@ export default function SDEV2110Home() {
     },
     {
       name: 'Final Project',
-      link: '',
+      link: '/school/SDEV2110/final/index.html',
     },
     {
       name: 'Clock/Calendar',
