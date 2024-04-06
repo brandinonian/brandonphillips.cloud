@@ -27,8 +27,8 @@ export default function SchoolHome() {
         <div className="flex flex-col gap-6 mt-16 p-8 rounded-lg">
           <div className="pb-8 text-2xl text-center">Courses</div>
           {courses.map((course) => (
-            <Link href={course.link}>
-              <div key={course.id} className="bg-blue-400 rounded-lg flex items-center justify-center shadow-lg p-8 hover:bg-blue-300">
+            <Link key={course.id} href={course.link}>
+              <div className="bg-blue-400 rounded-lg flex items-center justify-center shadow-lg p-8 hover:bg-blue-300">
                 {course.title}
               </div>
             </Link>
