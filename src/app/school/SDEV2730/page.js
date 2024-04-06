@@ -52,9 +52,11 @@ export default function SDEV2730Home() {
         narrative="Work in progress..."
       />
 
-      <div className="flex flex-row overflow-scroll">
+      <div className="flex flex-row p-24">
         {screenshots.map((screenshot) => {
-          <Image key={screenshot.key} src={screenshot.path} alt={screenshot.alt} />
+          <div key={screenshot.key}>
+            <Image src={screenshot.path} alt={screenshot.alt} />
+          </div>
         })}
       </div>
 
