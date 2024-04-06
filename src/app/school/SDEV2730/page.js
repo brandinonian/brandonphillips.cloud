@@ -6,32 +6,39 @@ const screenshots = [
   {
     path: 'screenshots/2730/final_login.png',
     alt: 'Final project login screen',
+    key: 1
   },
   {
     path: 'screenshots/2730/final_add.png',
     alt: 'Final project add new hike screen',
+    key: 2
   },
   {
     path: 'screenshots/2730/final_home.png',
     alt: 'Home screen showing list of hikes',
+    key: 3
   },
   {
     path: 'screenshots/2730/final_details.png',
     alt: 'Hike details page',
+    key: 4
   },
   {
     path: 'screenshots/2730/fav_places.png',
     alt: 'Favorite places screenshot',
+    key: 5
   },
   {
     path: 'screenshots/2730/fast_food.png',
     alt: 'Fast food order app',
+    key: 6
   },
-  {
-    path: 'screenshots/2730/',
-    alt: '',
-  },
-]
+  // {
+  //   path: 'screenshots/2730/',
+  //   alt: '',
+  //   key: 7
+  // },
+];
 
 export default function SDEV2730Home() {
   return (
@@ -47,7 +54,7 @@ export default function SDEV2730Home() {
 
       <div className="flex flex-row overflow-scroll">
         {screenshots.map((screenshot) => {
-          <Image src={screenshot.path} alt={screenshot.alt} />
+          <Image key={screenshot.key} src={screenshot.path} alt={screenshot.alt} />
         })}
       </div>
 
