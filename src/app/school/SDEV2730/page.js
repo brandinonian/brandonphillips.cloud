@@ -55,7 +55,7 @@ export default function SDEV2730Home() {
       <div className="flex flex-row p-24">
         {screenshots.map((screenshot) => {
           <div key={screenshot.key}>
-            <Image src={screenshot.path} alt={screenshot.alt} />
+            <Image src={screenshot.path} alt={screenshot.alt} width={100} height={300} />
           </div>
         })}
       </div>
