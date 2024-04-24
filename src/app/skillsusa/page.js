@@ -7,6 +7,7 @@ export default function SkillsUsa() {
       </div>
       <div>
         <p>State Championship</p>
+        <p>Gold Medal</p>
 
         <p>Nationals</p>
 

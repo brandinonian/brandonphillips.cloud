@@ -1,4 +1,3 @@
-import Link from "next/link";
 import NavLink from "../componenets/NavLink";
 
 const metadata = {
@@ -13,7 +12,7 @@ export default function SchoolLayout({ children }) {
         <NavLink link={'/'} text={'Home'} />
         <NavLink link={'/school'} text={'School Home'} />
       </div>
-      <div className="bg-blue-500">
+      <div className="bg-grey-400">
         {children}
       </div>
     </div>
