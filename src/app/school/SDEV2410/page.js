@@ -3,18 +3,18 @@ import Image from "next/image";
 
 const screenshots = [
   {
-    path: '/screenshots/2410/',
-    alt: '',
+    path: '/screenshots/2410/M5Competency.png',
+    alt: 'Module 5 competency project',
     key: 1
   },
   {
-    path: '/screenshots/2410/',
-    alt: '',
+    path: '/screenshots/2410/M4Competency.png',
+    alt: 'Module 4 competency project',
     key: 2
   },
   {
-    path: '/screenshots/2410/',
-    alt: '',
+    path: '/screenshots/2410/M3Competency.png',
+    alt: 'Module 3 competency project',
     key: 3
   },
   {
@@ -54,8 +54,8 @@ export default function SDEV2410Home() {
             key={screenshot.key}
             src={screenshot.path}
             alt={screenshot.alt}
-            height={500}
-            width={300}
+            width={1000}
+            height={1000}
           />))
         }
       </div>

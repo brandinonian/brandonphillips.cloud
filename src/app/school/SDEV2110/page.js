@@ -1,3 +1,4 @@
+import LinkButton from "@/app/componenets/LinkButton";
 import CourseInfo from "@/app/componenets/school/CourseInfo";
 
 export default function SDEV2110Home() {
@@ -25,28 +26,24 @@ export default function SDEV2110Home() {
     },
     {
       name: 'Tabbed Content',
-      link: '',
+      link: '/school/SDEV2110/tabbed_content',
     },
     {
       name: 'Ninja Quiz',
-      link: '',
+      link: '/school/SDEV2110/jsquiz',
     },
     {
       name: 'Final Project',
-      link: '/school/SDEV2110/final/index.html',
+      link: '/school/SDEV2110/final_project',
     },
     {
       name: 'Clock/Calendar',
       link: '',
     },
-    {
-      name: '',
-      link: '',
-    },
   ]
 
   return (
-    <div>
+    <div className="flex flex-col justify-center items-center pb-8">
       <CourseInfo
         id="SDEV 2110"
         title="JavaScript Programming I"
@@ -55,12 +52,14 @@ export default function SDEV2110Home() {
         make them interactive and dynamic."
         narrative="Work in progress...the goal is to have my JS projects accessible from this page"
       />
-      <div>
+      <div className="flex flex-col text-center gap-8">
         <div className="text-xl text-grey-100">Live Projects</div>
         {projects.map((project) => (
-          <div key={project.name}>
-            <a href={project.link}>{project.name}</a>
-          </div>
+          <LinkButton
+            key={project.name}
+            link={project.link}
+            text={project.name}
+          />
         ))}
       </div>
     </div>
