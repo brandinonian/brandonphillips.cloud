@@ -7,5 +7,5 @@ export default function NavLink({text, link}) {
         {text}
       </div>
     </Link>
-  )
+  );
 }

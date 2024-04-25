@@ -1,36 +1,24 @@
+import CourseContent from "@/app/componenets/school/CourseContent";
 import CourseInfo from "@/app/componenets/school/CourseInfo";
-import Image from "next/image";
 
 const screenshots = [
   {
-    path: '/screenshots/2730/final_login.png',
+    leftPath: '/screenshots/2730/final_login.png',
     alt: 'Final project login screen',
+    rightPath: '/screenshots/2730/final_add.png',
     key: 1
   },
   {
-    path: '/screenshots/2730/final_add.png',
-    alt: 'Final project add new hike screen',
+    leftPath: '/screenshots/2730/final_home.png',
+    alt: 'Final project login screen',
+    rightPath: '/screenshots/2730/final_details.png',
     key: 2
   },
   {
-    path: '/screenshots/2730/final_home.png',
-    alt: 'Home screen showing list of hikes',
+    leftPath: '/screenshots/2730/fav_places.png',
+    alt: 'Final project login screen',
+    rightPath: '/screenshots/2730/fast_food.png',
     key: 3
-  },
-  {
-    path: '/screenshots/2730/final_details.png',
-    alt: 'Hike details page',
-    key: 4
-  },
-  {
-    path: '/screenshots/2730/fav_places.png',
-    alt: 'Favorite places screenshot',
-    key: 5
-  },
-  {
-    path: '/screenshots/2730/fast_food.png',
-    alt: 'Fast food order app',
-    key: 6
   },
 ];
 
@@ -46,16 +34,15 @@ export default function SDEV2730Home() {
         narrative="Work in progress..."
       />
 
-      <div className="flex flex-row flex-wrap gap-10 justify-center">
-        {screenshots.map(screenshot => (
-          <Image
-            key={screenshot.key}
-            src={screenshot.path}
-            alt={screenshot.alt}
-            height={500}
-            width={300}
-            className="rounded"
-          />))
+      <div className="flex flex-col gap-32 justify-center">
+        {
+          screenshots.map(screenshot => (
+            <CourseContent
+              key={screenshot.key}
+              leftSRC={screenshot.leftPath}
+              rightSRC={screenshot.rightPath}
+            />
+          ))
         }
       </div>
 
