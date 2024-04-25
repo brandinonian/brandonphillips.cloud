@@ -12,7 +12,7 @@ export default function SchoolLayout({ children }) {
         <NavLink link={'/'} text={'Home'} />
         <NavLink link={'/school'} text={'School Home'} />
       </div>
-      <div className="bg-grey-400">
+      <div className="bg-grey-500">
         {children}
       </div>
     </div>

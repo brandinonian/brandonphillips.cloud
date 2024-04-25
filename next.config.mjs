@@ -22,6 +22,26 @@ const nextConfig = {
         destination: '/SDEV2110/jsquiz/index.html',
         permanent: true,
       },
+      {
+        source: '/school/SDEV2110/changing_images',
+        destination: '/SDEV2110/changing_images/index.html',
+        permanent: true,
+      },
+      {
+        source: '/school/SDEV2110/dropdown_menu',
+        destination: '/SDEV2110/dropdown_menu/index.html',
+        permanent: true,
+      },
+      {
+        source: '/school/SDEV2110/free_advice',
+        destination: '/SDEV2110/free_advice/index.html',
+        permanent: true,
+      },
+      {
+        source: '/school/SDEV2110/movie_info',
+        destination: '/SDEV2110/movie_info/index.html',
+        permanent: true,
+      },
     ]
   }
 };

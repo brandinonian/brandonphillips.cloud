@@ -24,7 +24,7 @@ const screenshots = [
 
 export default function SDEV2730Home() {
   return (
-    <div className="flex flex-col justify-center gap-16 p-48 pt-20 min-h-screen bg-grey-400">
+    <div className="flex flex-col justify-center gap-16 pt-20 min-h-screen">
       <CourseInfo
         id="SDEV 2730"
         title="Mobile Development"
@@ -34,7 +34,7 @@ export default function SDEV2730Home() {
         narrative="Work in progress..."
       />
 
-      <div className="flex flex-col gap-32 justify-center">
+      <div className="flex flex-col gap-32 justify-center px-64">
         {
           screenshots.map(screenshot => (
             <CourseContent

@@ -6,23 +6,23 @@ export default function SDEV2110Home() {
   const projects = [
     {
       name: 'Changing Images',
-      link: '',
+      link: '/school/SDEV2110/changing_images',
     },
-    {
-      name: 'Country Info',
-      link: '',
-    },
+    // {
+    //   name: 'Country Info',
+    //   link: '',
+    // },
     {
       name: 'Dropdown Menu',
-      link: '',
+      link: '/school/SDEV2110/dropdown_menu',
     },
     {
       name: 'Free Advice',
-      link: '',
+      link: '/school/SDEV2110/free_advice',
     },
     {
       name: 'Movie Info',
-      link: '',
+      link: '/school/SDEV2110/movie_info',
     },
     {
       name: 'Tabbed Content',
@@ -36,10 +36,10 @@ export default function SDEV2110Home() {
       name: 'Final Project',
       link: '/school/SDEV2110/final_project',
     },
-    {
-      name: 'Clock/Calendar',
-      link: '',
-    },
+    // {
+    //   name: 'Clock/Calendar',
+    //   link: '',
+    // },
   ]
 
   return (
@@ -53,7 +53,7 @@ export default function SDEV2110Home() {
         narrative="Work in progress...the goal is to have my JS projects accessible from this page"
       />
       <div className="flex flex-col text-center gap-8">
-        <div className="text-xl text-grey-100">Live Projects</div>
+        <div className="py-16 text-5xl text-grey-200">Live Projects</div>
         {projects.map((project) => (
           <LinkButton
             key={project.name}
