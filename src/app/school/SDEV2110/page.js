@@ -20,10 +20,10 @@ export default function SDEV2110Home() {
       name: 'Free Advice',
       link: '/school/SDEV2110/free_advice',
     },
-    {
-      name: 'Movie Info',
-      link: '/school/SDEV2110/movie_info',
-    },
+    // {
+    //   name: 'Movie Info',
+    //   link: '/school/SDEV2110/movie_info',
+    // },
     {
       name: 'Tabbed Content',
       link: '/school/SDEV2110/tabbed_content',
