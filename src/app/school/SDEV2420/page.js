@@ -36,7 +36,7 @@ const screenshots = [
 
 export default function SDEV2420Home() {
   return (
-    <div className="flex flex-col justify-center gap-16 p-48 pt-20 min-h-screen bg-blue-500">
+    <div className="flex flex-col justify-center gap-16 pt-20 min-h-screen">
       <CourseInfo
         id="SDEV 2420"
         title="C# Programming II"

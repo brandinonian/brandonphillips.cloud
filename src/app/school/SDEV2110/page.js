@@ -43,7 +43,7 @@ export default function SDEV2110Home() {
   ]
 
   return (
-    <div className="flex flex-col justify-center items-center pb-8">
+    <div className="flex flex-col justify-center gap-16 pt-20 min-h-screen">
       <CourseInfo
         id="SDEV 2110"
         title="JavaScript Programming I"
