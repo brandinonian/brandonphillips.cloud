@@ -1,37 +1,40 @@
+import CourseContent from "@/app/componenets/school/CourseContent";
 import CourseInfo from "@/app/componenets/school/CourseInfo";
-import Image from "next/image";
 
 const screenshots = [
   {
-    path: '/screenshots/2410/M5Competency.png',
-    alt: 'Module 5 competency project',
+    rightSRC: '/screenshots/2410/M5Competency.png',
+    rightAlt: 'Module 5 competency project',
+    rightWidth: 600,
     key: 1
   },
   {
-    path: '/screenshots/2410/M4Competency.png',
-    alt: 'Module 4 competency project',
+    rightSRC: '/screenshots/2410/M4Competency.png',
+    rightAlt: 'Module 4 competency project',
+    rightWidth: 600,
     key: 2
   },
   {
-    path: '/screenshots/2410/M3Competency.png',
-    alt: 'Module 3 competency project',
+    rightSRC: '/screenshots/2410/M3Competency.png',
+    rightAlt: 'Module 3 competency project',
+    rightWidth: 600,
     key: 3
   },
-  {
-    path: '/screenshots/2410/',
-    alt: '',
-    key: 4
-  },
-  {
-    path: '/screenshots/2410/',
-    alt: '',
-    key: 5
-  },
-  {
-    path: '/screenshots/2410/',
-    alt: '',
-    key: 6
-  },
+  // {
+  //   path: '/screenshots/2410/',
+  //   alt: '',
+  //   key: 4
+  // },
+  // {
+  //   path: '/screenshots/2410/',
+  //   alt: '',
+  //   key: 5
+  // },
+  // {
+  //   path: '/screenshots/2410/',
+  //   alt: '',
+  //   key: 6
+  // },
 ];
 
 export default function SDEV2410Home() {
@@ -48,14 +51,13 @@ export default function SDEV2410Home() {
         narrative="Work in progress..."
       />
 
-      <div className="flex flex-row flex-wrap gap-10 justify-center">
+      <div className="flex flex-col gap-10 justify-center">
         {screenshots.map(screenshot => (
-          <Image
+          <CourseContent
             key={screenshot.key}
-            src={screenshot.path}
-            alt={screenshot.alt}
-            width={1000}
-            height={1000}
+            rightSRC={screenshot.rightSRC}
+            rightAlt={screenshot.rightAlt}
+            rightWidth={screenshot.rightWidth}
           />))
         }
       </div>

@@ -4,20 +4,23 @@ import CourseInfo from "@/app/componenets/school/CourseInfo";
 const screenshots = [
   {
     leftPath: '/screenshots/2730/final_login.png',
-    alt: 'Final project login screen',
+    leftAlt: 'Final project login screen',
     rightPath: '/screenshots/2730/final_add.png',
+    rightAlt: 'Final project new hike screen',
     key: 1
   },
   {
     leftPath: '/screenshots/2730/final_home.png',
-    alt: 'Final project login screen',
+    leftAlt: 'Final project login screen',
     rightPath: '/screenshots/2730/final_details.png',
+    rightAlt: 'Final project login screen',
     key: 2
   },
   {
     leftPath: '/screenshots/2730/fav_places.png',
-    alt: 'Final project login screen',
+    leftAlt: 'Final project login screen',
     rightPath: '/screenshots/2730/fast_food.png',
+    rightAlt: 'Final project login screen',
     key: 3
   },
 ];
