@@ -14,7 +14,7 @@ module.exports = {
       },
     },
     colors: {
-      transparent: 'transparent',
+      na: 'transparent',
       blue: {
         100: '#1bbcd1',
         200: '#1d8491',
@@ -30,11 +30,11 @@ module.exports = {
         500: '#0f0f0f',
       },
       display: {
-        100: '',
-        200: '',
-        300: '',
-        400: '',
-        500: '',
+        100: '#e8fff1',
+        200: '#d8ebdf',
+        300: '#c9d6ce',
+        400: '#94b3a0',
+        500: '#76b38e',
       },
       gold: '#c99d22',
     },
