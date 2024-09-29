@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Hero from "../componenets/hero";
 
 export default function SchoolHome() {
 
@@ -34,10 +35,14 @@ export default function SchoolHome() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center">
       <div className="p-8 pt-20">
-        <div className="flex flex-col gap-8 items-center justify-center">
+        <Hero
+          title="Davis Technical College"
+          h2="550 East 300 South Kaysville, UT 84037"
+        />
+        {/* <div className="flex flex-col gap-8 items-center justify-center">
           <p className="text-6xl">Davis Technical College</p>
           <p className="text-xl">550 East 300 South<br></br>Kaysville, UT 84037</p>
-        </div>
+        </div> */}
         <Image
           src="/images/dtc.jpg"
           alt="Davis Tech exterior photo"
@@ -45,19 +50,29 @@ export default function SchoolHome() {
           height={600}
           className="my-20 rounded-md"
         />
-        <div className="flex flex-col gap-6 mt-16 p-8 rounded-lg">
+        <div className="flex flex-col gap-6 mt-16 p-8">
+          <div className="text-4xl text-center">
+            Certificates
+          </div>
+          <div className="flex flex-row justify-center space-x-8">
+            <div>Software Development Placeholder</div>
+            <div>IT Technician Placeholder</div>
+            <div>Composeites Technician Certificate</div>
+          </div>
+        </div>
+        <div className="flex flex-col gap-6 mt-16 p-8">
           <div className="pb-8 text-4xl text-center">Courses</div>
-          <div className="w-full h-1 bg-grey-100"></div>
+          <div className="w-full h-1 bg-display-400"></div>
           {courses.map((course) => (
             <Link key={course.id} href={course.link}>
-              <div className="bg-blue-400 items-center justify-center rounded flex hover:bg-blue-300">
+              <div className="bg-grey-500 items-center justify-center rounded flex hover:bg-grey-300">
                 <div className="text-xl p-8">
                   {course.title}
                 </div>
               </div>
             </Link>
           ))}
-          <div className="w-full h-1 bg-grey-100"></div>
+          <div className="w-full h-1 bg-display-400"></div>
         </div>
       </div>
     </div>

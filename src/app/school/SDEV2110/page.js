@@ -1,5 +1,5 @@
-import LinkButton from "@/app/componenets/LinkButton";
 import CourseInfo from "@/app/componenets/school/CourseInfo";
+import Link from "next/link";
 
 export default function SDEV2110Home() {
 
@@ -64,4 +64,14 @@ export default function SDEV2110Home() {
       </div>
     </div>
   );
+}
+
+function LinkButton({ link, text }) {
+  return (
+    <div className="p-4">
+      <Link href={link}>
+        {text}
+      </Link>
+    </div>
+  )
 }
